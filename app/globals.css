@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+a,
+button {
+  transition: filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+a:hover,
+button:hover {
+  filter: brightness(1.04);
+}
+
+a:active,
+button:active {
+  filter: brightness(0.97);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+}
+
+.dark .hero-gradient {
+  background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+}
+
+.accordion-item.active .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.whatsapp-icon,
+.material-symbols-filled {
+  font-variation-settings: "FILL" 1;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.dark .text-primary-dark {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+.interactive-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.interactive-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
+}
+
+.interactive-card:active,
+.interactive-card.is-pressed {
+  transform: scale(0.98);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.15);
+}
+
+.interactive-card.is-selected {
+  border-color: #166534 !important;
+  box-shadow: 0 0 0 3px rgba(22, 101, 52, 0.25);
+}
+
+.image-pop {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  cursor: pointer;
+}
+
+.image-pop:hover {
+  transform: scale(1.03);
+  box-shadow: 0 18px 30px rgba(15, 23, 42, 0.2);
+}
+
+#product-main-image.image-pop:hover {
+  transform: scale(1.07);
+}
+
+.image-pop.is-pop {
+  transform: scale(1.03);
+  box-shadow: 0 18px 30px rgba(15, 23, 42, 0.2);
+}
+
+.product-switching {
+  animation: product-switch 0.28s ease;
+}
+
+@keyframes product-switch {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.98);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.badge-bounce {
+  animation: badge-bounce 1.8s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes badge-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-6px);
+  }
+
+  40% {
+    transform: translateY(0);
+  }
+
+  55% {
+    transform: translateY(-3px);
+  }
+
+  70% {
+    transform: translateY(0);
+  }
+}
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+  will-change: transform, opacity;
+}
+
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#tentang .about-text-col,
+#tentang .about-image-col {
+  opacity: 0;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+  will-change: transform, opacity;
+}
+
+#tentang .about-text-col {
+  transform: translateX(-40px);
+}
+
+#tentang .about-image-col {
+  transform: translateX(40px);
+}
+
+#tentang.about-in-view .about-text-col,
+#tentang.about-in-view .about-image-col {
+  opacity: 1;
+  transform: translateX(0);
+}
