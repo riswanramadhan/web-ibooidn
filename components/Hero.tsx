@@ -25,6 +25,7 @@ const heroSlides = [
 export function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [shouldLoadAllSlides, setShouldLoadAllSlides] = useState(false);
   const touchStartX = useRef(0);
 
   const changeSlide = useCallback((direction: number) => {
@@ -32,6 +33,15 @@ export function Hero() {
       const next = current + direction + heroSlides.length;
       return next % heroSlides.length;
     });
+  }, []);
+
+  useEffect(() => {
+    const preloadTimer = window.setTimeout(
+      () => setShouldLoadAllSlides(true),
+      800,
+    );
+
+    return () => window.clearTimeout(preloadTimer);
   }, []);
 
   useEffect(() => {
@@ -57,7 +67,11 @@ export function Hero() {
         touchStartX.current = event.changedTouches[0].clientX;
       }}
     >
-      {heroSlides.map((slide, index) => (
+      {heroSlides.map((slide, index) => {
+        const shouldRender = index === 0 || shouldLoadAllSlides;
+        if (!shouldRender) return null;
+
+        return (
         <Image
           alt={slide.alt}
           className={cn(
@@ -71,7 +85,8 @@ export function Hero() {
           src={slide.src}
           style={{ objectPosition: slide.objectPosition }}
         />
-      ))}
+        );
+      })}
       <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/50 to-transparent" />
       <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center justify-center">
         <div className="max-w-xl text-center">
@@ -81,8 +96,8 @@ export function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-            Wellness Drinks <br />
-            <span className="text-accent-orange">Guilt-free Meals</span>
+            Iboo Idn <br />
+            <span className="text-accent-orange">Wellness Shot</span>
           </h1>
 
           <p className="text-slate-200 text-lg mb-8">

@@ -206,7 +206,7 @@ export function ProductSection() {
               onTouchStart={(event) => {
                 touchStartX.current = event.changedTouches[0].clientX;
               }}
-              priority
+              loading="lazy"
               quality={80}
               sizes="(min-width: 1024px) 520px, 90vw"
               src={activeProduct.image}

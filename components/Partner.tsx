@@ -47,7 +47,7 @@ export function Partner() {
                     aria-label="DekatLokal"
                     className="flex items-center justify-center"
                     href="https://dekatlokal.com"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     target="_blank"
                   >
                     {content}

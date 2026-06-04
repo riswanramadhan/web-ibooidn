@@ -142,7 +142,7 @@ export function Footer() {
                         aria-label="DekatLokal"
                         className="inline-flex items-center"
                         href="https://dekatlokal.com"
-                        rel="noopener noreferrer"
+                        rel="noopener noreferrer nofollow"
                         target="_blank"
                       >
                         {logo}
@@ -163,7 +163,7 @@ export function Footer() {
             <a
               className="font-bold underline hover:text-accent-orange"
               href="https://dekatlokal.com"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               target="_blank"
             >
               DekatLokal

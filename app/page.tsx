@@ -10,6 +10,8 @@ import { ProductSection } from "@/components/ProductSection";
 import { ResellerSection } from "@/components/ResellerSection";
 import { Testimonials } from "@/components/Testimonials";
 
+export const dynamic = "force-static";
+
 export default function Home() {
   return (
     <>
