@@ -34,7 +34,7 @@ export const products: Record<ProductKey, Product> = {
     descriptionBody:
       "Membantu mendukung daya tahan tubuh, menjaga keseimbangan gula darah, serta menunjang kesehatan jantung, hati, dan otak. Juga berperan dalam merawat kesehatan mata, kulit, rambut, gigi, dan mulut.",
     image: "/images/purple.freak-produk.jpg.PNG",
-    imageAlt: "Iboo.idn Purple Freak 70ml Wellness Shot",
+    imageAlt: "Iboo.idn Purple Freak 70 ml wellness shot",
     imagePosition: "center center",
     showBestSeller: true,
     showBadgeIcon: true,
@@ -59,7 +59,7 @@ export const products: Record<ProductKey, Product> = {
     descriptionBody:
       "Membantu menjaga daya tahan tubuh, menjaga kesehatan pencernaan, mengontrol tekanan darah, mengurangi peradangan, meningkatkan kesehatan tulang, mempercepat penyembuhan luka, membantu mencegah penyakit kardiovaskular, serta meringankan gejala sinusitis.",
     image: "/images/ginger.shot-produk.jpg.PNG",
-    imageAlt: "Iboo.idn Ginger Shot 70ml Wellness Shot",
+    imageAlt: "Iboo.idn Ginger Shot 70 ml wellness shot",
     showBestSeller: false,
     showBadgeIcon: false,
     storage: {
@@ -83,7 +83,7 @@ export const products: Record<ProductKey, Product> = {
     descriptionBody:
       "Diformulasikan untuk membantu menjaga keseimbangan tubuh, mendukung kesehatan pencernaan dan hormonal. Dapat membantu mencerahkan kulit, menjaga vitalitas, mengontrol gula darah dan kolesterol, melawan peradangan, serta menjaga daya tahan tubuh.",
     image: "/images/turmeric.shot-produk.PNG",
-    imageAlt: "Iboo.idn Turmeric Shot 70ml Wellness Shot",
+    imageAlt: "Iboo.idn Turmeric Shot 70 ml wellness shot",
     imagePosition: "center 20%",
     showBestSeller: true,
     showBadgeIcon: true,
@@ -108,7 +108,7 @@ export const products: Record<ProductKey, Product> = {
     descriptionBody:
       "Diperkaya manfaat untuk mendukung daya tahan tubuh, menutrisi kulit secara alami, serta memelihara kesehatan rambut dan kekuatan tulang. Juga membantu mengendalikan kadar gula darah, mencegah penuaan dini, menjaga kesehatan ginjal, dan meminimalkan risiko penyakit kronis.",
     image: "/images/carrot.shot-produk.PNG",
-    imageAlt: "Iboo.idn Carrot Crush 70ml Wellness Shot",
+    imageAlt: "Iboo.idn Carrot Crush 70 ml wellness shot",
     imagePosition: "center 40%",
     showBestSeller: false,
     showBadgeIcon: false,
@@ -133,7 +133,7 @@ export const products: Record<ProductKey, Product> = {
     descriptionBody:
       "Membantu menjaga daya tahan tubuh, mendukung kesehatan jantung, memperlambat penuaan, meningkatkan kesuburan, serta membantu menjaga fungsi otak dan daya ingat.",
     image: "/images/celery.shot-produk.PNG",
-    imageAlt: "Iboo.idn Celery Shot 70ml Wellness Shot",
+    imageAlt: "Iboo.idn Celery Shot 70 ml wellness shot",
     showBestSeller: false,
     showBadgeIcon: false,
     storage: {

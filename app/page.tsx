@@ -8,6 +8,7 @@ import { Navbar } from "@/components/Navbar";
 import { Partner } from "@/components/Partner";
 import { ProductSection } from "@/components/ProductSection";
 import { ResellerSection } from "@/components/ResellerSection";
+import { StructuredData } from "@/components/StructuredData";
 import { Testimonials } from "@/components/Testimonials";
 
 export const dynamic = "force-static";
@@ -15,15 +16,18 @@ export const dynamic = "force-static";
 export default function Home() {
   return (
     <>
+      <StructuredData />
       <Navbar />
-      <Hero />
-      <Partner />
-      <About />
-      <ProductSection />
-      <ResellerSection />
-      <Testimonials />
-      <FAQ />
-      <CTASection />
+      <main>
+        <Hero />
+        <Partner />
+        <About />
+        <ProductSection />
+        <ResellerSection />
+        <Testimonials />
+        <FAQ />
+        <CTASection />
+      </main>
       <Footer />
       <FloatingWhatsApp />
     </>

@@ -68,7 +68,7 @@ export function About() {
           <div className="relative about-image-col">
             <div className="absolute -inset-4 bg-accent-orange/10 rounded-3xl blur-2xl" />
             <Image
-              alt="Fresh fruits and vegetables"
+              alt="Bahan buah, sayur, dan rempah untuk wellness shot Iboo.idn"
               className={cn(
                 "relative rounded-large shadow-2xl w-11/12 mx-auto aspect-[4/3] object-cover object-[center_80%] scale-105 image-pop",
                 isImagePopped && "is-pop",

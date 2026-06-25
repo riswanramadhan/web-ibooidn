@@ -19,6 +19,8 @@ export function CTASection() {
               <a
                 className="group flex items-center gap-3 bg-accent-orange px-7 py-3 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all w-full sm:w-auto text-white"
                 href={MARKETPLACE_URL}
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <span className="material-symbols-outlined text-white text-3xl whatsapp-icon">
                   chat

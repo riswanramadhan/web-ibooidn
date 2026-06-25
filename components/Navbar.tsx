@@ -21,7 +21,7 @@ export function Navbar() {
             href="#beranda"
           >
             <Image
-              alt="Logo Iboo.idn"
+              alt="Logo Iboo.idn wellness shot alami"
               className="h-10 w-10 object-cover rounded-full"
               height={40}
               quality={80}

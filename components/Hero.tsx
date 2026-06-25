@@ -7,17 +7,17 @@ import { cn } from "@/lib/cn";
 const heroSlides = [
   {
     src: "/images/hero-banner.jpg.PNG",
-    alt: "Fresh Wellness Shot Ingredients and Vitality",
+    alt: "Iboo.idn wellness shot 70 ml berbahan buah sayur dan rempah alami",
     objectPosition: "center 62%",
   },
   {
     src: "/images/hero-banner2.jpg.PNG",
-    alt: "Fresh Wellness Shot Ingredients and Vitality 2",
+    alt: "Varian Iboo.idn wellness shot 70 ml tersusun di display produk",
     objectPosition: "center 72%",
   },
   {
     src: "/images/hero-banner1.jpg.PNG",
-    alt: "Fresh Wellness Shot Ingredients and Vitality 3",
+    alt: "Deretan botol Iboo.idn wellness shot di meja",
     objectPosition: "center 62%",
   },
 ];
@@ -72,19 +72,19 @@ export function Hero() {
         if (!shouldRender) return null;
 
         return (
-        <Image
-          alt={slide.alt}
-          className={cn(
-            "hero-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-500",
-            index === currentSlide ? "opacity-100" : "opacity-0",
-          )}
-          fill
-          key={slide.src}
-          priority={index === 0}
-          sizes="100vw"
-          src={slide.src}
-          style={{ objectPosition: slide.objectPosition }}
-        />
+          <Image
+            alt={slide.alt}
+            className={cn(
+              "hero-slide absolute inset-0 w-full h-full object-cover transition-opacity duration-500",
+              index === currentSlide ? "opacity-100" : "opacity-0",
+            )}
+            fill
+            key={slide.src}
+            priority={index === 0}
+            sizes="100vw"
+            src={slide.src}
+            style={{ objectPosition: slide.objectPosition }}
+          />
         );
       })}
       <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/50 to-transparent" />
@@ -96,7 +96,7 @@ export function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-            Iboo Idn <br />
+            Iboo.idn <br />
             <span className="text-accent-orange">Wellness Shot</span>
           </h1>
 

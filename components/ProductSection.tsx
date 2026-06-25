@@ -254,9 +254,9 @@ export function ProductSection() {
             <span className="inline-block px-5 py-2 bg-accent-orange text-white font-bold rounded-full text-base mb-6">
               PRODUK KAMI
             </span>
-            <h1 className="text-5xl font-extrabold text-primary-dark dark:text-white leading-tight mb-4">
+            <h2 className="text-5xl font-extrabold text-primary-dark dark:text-white leading-tight mb-4">
               {activeProduct.name}
-            </h1>
+            </h2>
             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
               <strong>{activeProduct.descriptionLead}</strong>{" "}
               {activeProduct.descriptionBody}
@@ -322,6 +322,8 @@ export function ProductSection() {
               <a
                 className="group flex items-center gap-3 bg-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all border border-slate-200 dark:border-slate-700 dark:bg-slate-800"
                 href={MARKETPLACE_URL}
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <span className="material-symbols-outlined text-whatsapp-brand text-3xl whatsapp-icon">
                   chat

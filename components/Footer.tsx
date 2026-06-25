@@ -3,21 +3,21 @@ import { INSTAGRAM_URL, WHATSAPP_ORDER_URL } from "@/lib/constants";
 
 const footerPartners = [
   {
-    alt: "Logo DekatLokal",
+    alt: "Logo DekatLokal partner digital Iboo.idn",
     className: "max-h-12 max-w-full object-contain",
     height: 48,
     src: "/images/dekat-lokal (1).png",
     width: 200,
   },
   {
-    alt: "Logo Rumah BUMN Makassar",
+    alt: "Logo Rumah BUMN Makassar pendukung Iboo.idn",
     className: "max-h-16 max-w-full object-contain",
     height: 64,
     src: "/images/rumah-bumn (1).png",
     width: 200,
   },
   {
-    alt: "Logo Bank BRI",
+    alt: "Logo Bank BRI pendukung Iboo.idn",
     className: "max-h-10 max-w-full object-contain",
     height: 40,
     src: "/images/bank-bri (2).png",
@@ -72,22 +72,31 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-extrabold text-primary-dark dark:text-white mb-6">
+            <h2 className="font-extrabold text-primary-dark dark:text-white mb-6">
               Navigasi
-            </h4>
+            </h2>
             <ul className="space-y-4 text-slate-500 dark:text-slate-400 text-sm font-medium">
               <li>
-                <a className="hover:text-accent-orange transition-colors" href="#beranda">
+                <a
+                  className="hover:text-accent-orange transition-colors"
+                  href="#beranda"
+                >
                   Beranda
                 </a>
               </li>
               <li>
-                <a className="hover:text-accent-orange transition-colors" href="#tentang">
+                <a
+                  className="hover:text-accent-orange transition-colors"
+                  href="#tentang"
+                >
                   Tentang
                 </a>
               </li>
               <li>
-                <a className="hover:text-accent-orange transition-colors" href="#produk">
+                <a
+                  className="hover:text-accent-orange transition-colors"
+                  href="#produk"
+                >
                   Produk
                 </a>
               </li>
@@ -95,22 +104,31 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-extrabold text-primary-dark dark:text-white mb-6">
+            <h2 className="font-extrabold text-primary-dark dark:text-white mb-6">
               Section Lainnya
-            </h4>
+            </h2>
             <ul className="space-y-4 text-slate-500 dark:text-slate-400 text-sm font-medium">
               <li>
-                <a className="hover:text-accent-orange transition-colors" href="#mitra">
+                <a
+                  className="hover:text-accent-orange transition-colors"
+                  href="#mitra"
+                >
                   Reseller
                 </a>
               </li>
               <li>
-                <a className="hover:text-accent-orange transition-colors" href="#testimoni">
+                <a
+                  className="hover:text-accent-orange transition-colors"
+                  href="#testimoni"
+                >
                   Testimoni
                 </a>
               </li>
               <li>
-                <a className="hover:text-accent-orange transition-colors" href="#bantuan">
+                <a
+                  className="hover:text-accent-orange transition-colors"
+                  href="#bantuan"
+                >
                   Bantuan
                 </a>
               </li>
@@ -118,9 +136,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-extrabold text-primary-dark dark:text-white mb-6">
+            <h2 className="font-extrabold text-primary-dark dark:text-white mb-6">
               Mitra Kami
-            </h4>
+            </h2>
             <div className="flex flex-col gap-3 items-start">
               {footerPartners.map((partner) => {
                 const logo = (
@@ -137,12 +155,13 @@ export function Footer() {
 
                 return (
                   <div className="h-16 w-44 flex items-center" key={partner.alt}>
-                    {partner.alt === "Logo DekatLokal" ? (
+                    {partner.alt ===
+                    "Logo DekatLokal partner digital Iboo.idn" ? (
                       <a
                         aria-label="DekatLokal"
                         className="inline-flex items-center"
                         href="https://dekatlokal.com"
-                        rel="noopener noreferrer nofollow"
+                        rel="noopener noreferrer"
                         target="_blank"
                       >
                         {logo}
@@ -159,11 +178,11 @@ export function Footer() {
 
         <div className="pt-12 border-t border-slate-100 dark:border-slate-800 flex items-center justify-center">
           <p className="text-slate-400 text-sm text-center">
-            ©2026 Iboo.Idn. All rights reserved | Powered by{" "}
+            &copy;2026 Iboo.idn. All rights reserved | Powered by{" "}
             <a
               className="font-bold underline hover:text-accent-orange"
               href="https://dekatlokal.com"
-              rel="noopener noreferrer nofollow"
+              rel="noopener noreferrer"
               target="_blank"
             >
               DekatLokal
